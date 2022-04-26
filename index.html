@@ -16,13 +16,22 @@
 </head>
 
 <body>
-    <span>POG LEVELS: </span><span id="pog">40 </span><span>/100</span>
+    <span>POG LEVELS: </span><span id="pog">40 </span><span>/100</span><br><br>
+    <span id="pogtexts"></span>
 </body>
 <script>
 
     var number = Math.floor(Math.random() * 100);
-
+    var pogtext;
     document.getElementById("pog").innerHTML = number;
+    if (number < 20) {
+        pogtext = "Pogs Critical!"
+    } else if (number > 80) {
+        pogtext = "We're POGGING!"
+    } else {
+        pogtext = "Pog Levels Normal"
+    }
+    document.getElementById("pogtexts").innerHTML = pogtext;
 </script>
 
 </html>
