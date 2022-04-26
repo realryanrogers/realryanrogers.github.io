@@ -1,1 +1,28 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            padding: 2rem;
+            font-size: 5rem;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POG LEVELS</title>
+</head>
+
+<body>
+    <span>POG LEVELS: </span><span id="pog">40 </span><span>/100</span>
+</body>
+<script>
+
+    var number = Math.floor(Math.random() * 100);
+
+    document.getElementById("pog").innerHTML = number;
+</script>
+
+</html>
